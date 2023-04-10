@@ -9,6 +9,7 @@ SEARCH_URL = f'https://www.googleapis.com/customsearch/v1?key={SEARCH_API_KEY}&c
 
 # Set the filename of the text file containing website URLs
 out = "crawler/output.txt"
+out_websites = "crawler/websites.txt"
 
 response = requests.get(SEARCH_URL)
 search_results = response.json()
@@ -36,3 +37,8 @@ with open(out, "w") as outfile:
             for snippet in code_snippets:
                 outfile.write(f"{snippet}\n")
             outfile.write("\n")
+
+with open(out_websites, "w") as outfile:
+    for website in websites:
+        outfile.write(f"{website}\n")
+    outfile.write("\n")
