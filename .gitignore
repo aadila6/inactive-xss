@@ -1,0 +1,7 @@
+.vscode
+
+crawler/*.txt
+
+scanner/log
+scanner/output
+scanner/.vscode
