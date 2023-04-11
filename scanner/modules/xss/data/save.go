@@ -2,7 +2,7 @@
  * @Author: liziwei01
  * @Date: 2023-04-10 18:41:07
  * @LastEditors: liziwei01
- * @LastEditTime: 2023-04-10 19:05:33
+ * @LastEditTime: 2023-04-10 19:36:56
  * @Description: file content
  */
 package data
@@ -10,8 +10,6 @@ package data
 import (
 	"context"
 	"os"
-
-	// infoDao "github.com/liziwei01/gin-inactive-xss/modules/xss/dao/info"
 
 	xssModel "github.com/liziwei01/gin-inactive-xss/modules/xss/model"
 	"github.com/liziwei01/gin-lib/library/utils"
