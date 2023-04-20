@@ -6,3 +6,5 @@ scanner/.vscode
 scanner/log
 scanner/temp_file
 scanner/output
+
+temp/

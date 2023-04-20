@@ -22,9 +22,11 @@ out_websites = "crawler/websites.txt"
 
 response = requests.get(SEARCH_URL)
 search_results = response.json()
-# print(search_results)  # Print the search results JSON object to see its contents
-websites = [item['link'] for item in search_results['items']]
+print(search_results)  # Print the search results JSON object to see its contents
 
+# websites = [item['link'] for item in search_results['items']]
+websites = ['https://www.fallingbrick.co.uk/']
+print(websites)
 # Open the output file for writing
 with open(out, "w") as outfile:
     for website in websites:
@@ -34,7 +36,6 @@ with open(out, "w") as outfile:
             response = requests.get(website)
             soup = BeautifulSoup(response.content, 'html.parser')
             scripts = soup.find_all('script')
-            # print("Script: ", scripts)
             for script in scripts:
                 src = script.get('src')
                 if src:
