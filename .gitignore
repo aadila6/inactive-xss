@@ -3,6 +3,7 @@
 crawler/*.txt
 
 scanner/.vscode
+scanner/bin
 scanner/log
 scanner/temp_file
 scanner/output

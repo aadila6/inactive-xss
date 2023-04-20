@@ -2,7 +2,7 @@
  * @Author: liziwei01
  * @Date: 2022-04-18 17:27:34
  * @LastEditors: liziwei01
- * @LastEditTime: 2023-04-11 15:10:05
+ * @LastEditTime: 2023-04-20 14:01:40
  * @Description: file content
  */
 package data
@@ -16,7 +16,7 @@ import (
 
 func Check(ctx context.Context, pars xssModel.XSSPars) (bool, error) {
 	ret := false
-	gadgets := []string{"jquery"}
+	gadgets := []string{"jquery", "utag.js"}
 	for i := 0; i != len(gadgets); i++ {
 		if strings.Contains(pars.Snippet, gadgets[i]) {
 			ret = true

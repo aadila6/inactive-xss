@@ -2,7 +2,7 @@
 Author: Adila
 Date: 2023-04-10 18:32:20
 LastEditors: liziwei01
-LastEditTime: 2023-04-10 19:31:35
+LastEditTime: 2023-04-20 14:03:50
 Description: file conten
 '''
 import requests
@@ -11,7 +11,7 @@ from urllib.parse import urljoin
 
 SEARCH_API_KEY = 'AIzaSyAvktGfYy08SsUFgektGY8vMHDeumwtGY4'
 SEARCH_ENGINE_ID = 'a7574f723fa714c00'
-SEARCH_QUERY = 'jquery.get >= 3.0.0'
+SEARCH_QUERY = 'utag.js'
 SEARCH_URL = f'https://www.googleapis.com/customsearch/v1?key={SEARCH_API_KEY}&cx={SEARCH_ENGINE_ID}&q={SEARCH_QUERY}'
 
 CONFIRM_URL = "http://localhost:8000/xss/check"
